@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!--CSS-->
+        <h:outputStylesheet name="./css/default.css"/>
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <h:outputStylesheet name="bootstrap.min.css" library="css"/>
+       <h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
+       <!--JavaScript-->
+       <h:outputScript name="bootstrap.min.js" library="js"/>
+       
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <ui:insert name="top">Arriba</ui:insert>
+        </div>
+        <div>
+            <div id="left">
+                <ui:insert name="left">Izquierda</ui:insert>
+            </div>
+            <div id="content" class="left_content">
+                <ui:insert name="content">Contenido</ui:insert>
+            </div>
+        </div>
+        <div id="bottom">
+            <ui:insert name="bottom">Pie</ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
