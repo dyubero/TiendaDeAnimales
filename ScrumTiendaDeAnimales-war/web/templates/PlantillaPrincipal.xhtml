@@ -6,26 +6,32 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!--CSS-->
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
+        <h:outputStylesheet name="bootstrap.min.css" library="css"/>
+       <h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
+       <!--JavaScript-->
+       <h:outputScript name="bootstrap.min.js" library="js"/>
+       
         <title>Facelets Template</title>
     </h:head>
 
     <h:body>
 
         <div id="top">
-            <ui:insert name="top">Top</ui:insert>
+            <ui:insert name="top">Arriba</ui:insert>
         </div>
         <div>
             <div id="left">
-                <ui:insert name="left">Left</ui:insert>
+                <ui:insert name="left">Izquierda</ui:insert>
             </div>
             <div id="content" class="left_content">
-                <ui:insert name="content">Content</ui:insert>
+                <ui:insert name="content">Contenido</ui:insert>
             </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
+            <ui:insert name="bottom">Pie</ui:insert>
         </div>
 
     </h:body>
