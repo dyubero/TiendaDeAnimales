@@ -1,32 +1,53 @@
 
 #top {
     position: relative;
-    background-color: #036fab;
+    
+   float: end;
     color: white;
-    padding: 5px;
-    margin: 0px 0px 10px 0px;
+    padding: 2px;
+    margin: 150px 20px 20px 20px;
 }
 
 #bottom {
     position: relative;
-    background-color: #c2dfef;
+    
     padding: 5px;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 10px 10px 20px;
+    
+    
 }
+#top_foto{
+    alignment-adjust: central;
+}
+
 
 #left {
     float: left;
-    background-color: #ece3a5;
+    background-color: #5bc0de;
     padding: 5px;
     width: 150px;
+    height:auto;
+    float: next;
+    
 }
 
 #right {
-    float: right;
+    
     background-color: #ece3a5;
     padding: 5px;
-    width: 150px;
+    width: 180px;
+    
+    
+    
 }
+
+#contenedor{
+    margin-left: 5%;
+    margin-right: 3%;
+    alignment-adjust: central;
+    background-color: #99ffff;
+}
+
 
 .center_content {
     position: relative;
@@ -37,13 +58,17 @@
 .left_content {
     background-color: #dddddd;
     padding: 5px;
-    margin-left: 170px;
+    margin-left: 190px;
+    max-width: 1800px;
+    margin-right: 5%;
+    min-width: 650px;
+    
 }
 
 .right_content {
     background-color: #dddddd;
     padding: 5px;
-    margin: 0px 170px 0px 170px;
+    
 }
 
 #top a:link, #top a:visited {

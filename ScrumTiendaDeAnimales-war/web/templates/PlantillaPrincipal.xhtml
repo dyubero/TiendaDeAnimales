@@ -18,13 +18,62 @@
     </h:head>
 
     <h:body>
-
+  <div id="contenedor">
         <div id="top">
-            <ui:insert name="top">Arriba</ui:insert>
+            <ui:insert name="top" >
+            <nav	class="navbar	navbar-inverse	navbar-fixed-top">
+                
+                <div id="top_foto">
+                    <img src="images/banner_logo.gif"></img>
+                </div>
+                
+                <div	class="container">
+		<div	class="navbar-header">
+                    
+		<button	type="button"	class="navbar-toggle	collapsed"	data-toggle="collapse"	
+                    data-target="#navbar"	aria-expanded="false"	aria-controls="navbar">
+                    <span	class="sr-only">Toggle	navigation</span>
+                    <span	class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+		<span	class="icon-bar"></span>
+			</button>
+                <a	class="navbar-brand"	href="#">Nombre	del Proyecto</a>
+                            </div>
+                    <div	id="navbar"	class="collapse	navbar-collapse">
+			<ul	class="nav	navbar-nav">
+			<li	class="active"><a	href="#">Home</a></li>
+                        <li><a	href="#about">Acerca	de</a></li>
+                        <li><a	href="#contact">Contactar</a></li>
+                                                </ul>
+                                            </div>
+                                         </div>
+                                      </nav>
+            </ui:insert>
         </div>
         <div>
             <div id="left">
-                <ui:insert name="left">Izquierda</ui:insert>
+                <ui:insert name="left">
+                    <ol>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                        <br></br>
+                        <li>Hola</li>
+                    </ol>
+
+                </ui:insert>
             </div>
             <div id="content" class="left_content">
                 <ui:insert name="content">Contenido</ui:insert>
@@ -33,7 +82,7 @@
         <div id="bottom">
             <ui:insert name="bottom">Pie</ui:insert>
         </div>
-
+  </div>
     </h:body>
 
 </html>
