@@ -246,7 +246,7 @@ th {
     border-top-color: #000 !important;
   }
   .label {
-    border: 1px solid #000;
+    border: 100px solid #000;
   }
   .table {
     border-collapse: collapse !important;
@@ -4284,7 +4284,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
-    margin-right: 0;
+    margin-right: 100;
     margin-left: 0;
   }
 }
