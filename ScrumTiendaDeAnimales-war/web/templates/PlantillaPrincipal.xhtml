@@ -25,35 +25,43 @@
             <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
                 <div class="row">
                   
-                <div class="top_foto col-sm-2" id="limpiarFloat"><a href="/"> <img src="../images/banner_logo.gif" width="115" height="100" alt="banner_logo"/>
+                <div class="top_foto col-sm-2" id="limpiarFloat"><a href="/"> <img src="../images/banner_logo.gif" width="103" height="90" alt="banner_logo"/>
                     </a>
                 
                 </div>
                 <div class="container-fluid">
         
                     
-        <div class="navbar-header" ><a class="navbar-brand" href="#">Brand</a>
+        <div class="navbar-header" ><a class="navbar-brand" href="#">Animalia</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation
                 </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
+        <div class="collapse navbar-collapse navbar-menubuilder row">
             <ul class="nav navbar-nav navbar-left col-sm-8">
                 
                 <li><a href="/">Inicio</a>
                 </li>
                 <li><a href="/products">Productos</a>
                 </li>
-                <li><a href="/about-us">Sobre Nosotros</a>
-                </li>
+                
                 <li><a href="/contact">Contactanos</a>
                 </li>
                 <li><a href="/contact">Iniciar Sesión</a>
                 </li>
             </ul>
             
+            <form class="navbar-form pull-right" role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search"></input>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+            
         </div>
     </div>
+               
+        
                 </div>
 </div>
             </ui:insert>
@@ -61,24 +69,42 @@
         <div>
             <div id="left">
                 <ui:insert name="left">
-                    <ol><h3>Categorias</h3>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                        <li>Hola</li>
-                        <br></br>
-                    </ol>
+                   <div class="panel panel-default">
+                       
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><b>Categorias</b></h2>
+                    </div>
+                     <div class="panel-body">
+                          <div class="list-group">
+                     <button type="button" class="list-group-item">Gatos</button>
+                     <button type="button" class="list-group-item">Perros</button>
+                     <button type="button" class="list-group-item">Arañas</button>
+                     <button type="button" class="list-group-item">Lagartos</button>
+                     <button type="button" class="list-group-item">Peces</button>
+</div>
+                         
+                     </div>
+                       
+                       <div class="img-responsive">
+                           <img src="../images/logo-animal-green.png" height="189" width="189" alt="publicidad"/>
+                       </div>
+                       
+                       
+                       
+                       <div class="panel-heading">
+                        <h2 class="panel-title"><b>Promociones</b></h2>
+                    </div>
+                     <div class="panel-body">
+                          <div class="list-group">
+                     <button type="button" class="list-group-item">Descuentos</button>
+                     <button type="button" class="list-group-item">Hacerse socio Plus</button>
+                     <button type="button" class="list-group-item">Canjear puntos</button>
+                     <button type="button" class="list-group-item">Paquetes</button>
+                    
+                        </div>
+                     </div>
+                       
+                    </div>
 
                 </ui:insert>
             </div>
@@ -90,6 +116,7 @@
             <ui:insert name="bottom">
                 
                 
+
                 
                 <div class="panel panel-default row">
   <div class="panel-body col-sm-4">
@@ -103,6 +130,10 @@
   </div>
   
 </div>   
+                <img src="../images/facebook.png" width="20" height="20" alt="facebook"/>
+                <img src="../images/linkedin.png" width="20" height="20" alt="linkedin"/>
+                <img src="../images/twitter.png" width="20" height="20" alt="twitter"/>
+                <img src="../images/instagram.png" width="20" height="20" alt="instagram"/>
             </ui:insert>
         </div>
   </div>
