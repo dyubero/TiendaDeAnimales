@@ -5,54 +5,49 @@
     margin: 10px 20px 20px 20px;
 }
 
-
-
-#bottom {
+.barra-navegador{
     position: relative;
+    margin-top: 45px;
     
-    padding: 5px;
-    margin: 10px 10px 10px 20px;
-    
-    #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(119, 119, 119, 1);
 }
-#custom-bootstrap-menu.navbar-default {
-    font-size: 18px;
-    background-color: rgba(0, 191, 255, 0.27);
-    
-    border-width: 1px;
-    border-radius: 4px;
+
+ .navbar-custom {
+     background-color: #6cc872;
+     border-color: #000;
+     
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(119, 119, 119, 1);
-    background-color: rgba(248, 248, 248, 0);
+.color-pagina{
+    background-color: #6cc872;
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(51, 51, 51, 1);
-    background-color: rgba(248, 248, 248, 0);
+
+.barra-pie{
+  padding: 5px;
 }
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, 1);
-    background-color: rgba(231, 231, 231, 1);
+
+.panel-custom > .panel-custom-pie {
+    margin-left: 200px;
+    margin-right: 200px;
 }
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ddd;
+
+.panel-custom > .panel-heading-custom {
+  color: #333;
+  background-color: #6cc872;
+  border-color: #6cc872;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 10px 15px;
+  border-bottom: 2px solid;
+  border-right: 1px solid;
+  
 }
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #00bfff;
-}
-}
+
+
+
+
+
 #top_foto{
     padding-top: 30px;
     padding-left: 20px;

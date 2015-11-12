@@ -10,134 +10,136 @@
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
         <h:outputStylesheet name="bootstrap.min.css" library="css"/>
-       <h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
-       <!--JavaScript-->
-       <h:outputScript name="bootstrap.min.js" library="js"/>
-       
+        <h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
+        <!--JavaScript-->
+        <h:outputScript name="bootstrap.min.js" library="js"/>
+
         <title>Facelets Template</title>
     </h:head>
 
     <h:body>
-        <div class="col-sm-2"></div>
-  <div id="contenedor" class="jumbotron col-sm-8">
-        <div id="top">
-            <ui:insert name="top">
-            <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-                <div class="row">
-                  
-                <div class="top_foto col-sm-2" id="limpiarFloat"><a href="/"> <img src="../images/banner_logo.gif" width="103" height="90" alt="banner_logo"/>
-                    </a>
-                
-                </div>
-                <div class="container-fluid">
-        
-                    
-        <div class="navbar-header" ><a class="navbar-brand" href="#">Animalia</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation
-                </span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder row">
-            <ul class="nav navbar-nav navbar-left col-sm-8">
-                
-                <li><a href="/">Inicio</a>
-                </li>
-                <li><a href="/products">Productos</a>
-                </li>
-                
-                <li><a href="/contact">Contactanos</a>
-                </li>
-                <li><a href="/contact">Iniciar Sesión</a>
-                </li>
-            </ul>
-            
-            <form class="navbar-form pull-right" role="search">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search"></input>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-            
-        </div>
-    </div>
-               
-        
-                </div>
-</div>
-            </ui:insert>
-        </div>
-        <div>
-            <div id="left">
-                <ui:insert name="left">
-                   <div class="panel panel-default">
-                       
-                    <div class="panel-heading">
-                        <h2 class="panel-title"><b>Categorias</b></h2>
-                    </div>
-                     <div class="panel-body">
-                          <div class="list-group">
-                     <button type="button" class="list-group-item">Gatos</button>
-                     <button type="button" class="list-group-item">Perros</button>
-                     <button type="button" class="list-group-item">Arañas</button>
-                     <button type="button" class="list-group-item">Lagartos</button>
-                     <button type="button" class="list-group-item">Peces</button>
-</div>
-                         
-                     </div>
-                       
-                       <div class="img-responsive">
-                           <img src="../images/logo-animal-green.png" height="189" width="189" alt="publicidad"/>
-                       </div>
-                       
-                       
-                       
-                       <div class="panel-heading">
-                        <h2 class="panel-title"><b>Promociones</b></h2>
-                    </div>
-                     <div class="panel-body">
-                          <div class="list-group">
-                     <button type="button" class="list-group-item">Descuentos</button>
-                     <button type="button" class="list-group-item">Hacerse socio Plus</button>
-                     <button type="button" class="list-group-item">Canjear puntos</button>
-                     <button type="button" class="list-group-item">Paquetes</button>
-                    
-                        </div>
-                     </div>
-                       
-                    </div>
+        <div class="col-md-2"></div>
+        <div id="contenedor" class="jumbotron col-md-8">
+            <div id="top">
+                <ui:insert name="top">
+                    <div id="custom-bootstrap-menu" class="navbar navbar-custom" role="navigation">
+                        <div class="row">
 
+                            <div class="top_foto col-md-2" id="limpiarFloat"><a href="/"> <img src="../images/banner_logo.gif" width="103" height="90" alt="banner_logo"/>
+                                </a>
+
+                            </div>
+                            <div class="barra-navegador">
+                            <div class="container-fluid">
+
+
+                                <div class="navbar-header" ><a class="navbar-brand" href="#">Animalia</a>
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="icon-bar">Menu</span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-menubuilder row ">
+                                    <ul class="nav navbar-nav navbar-left col-md-6 ">
+
+                                        <li><a href="/">Inicio</a>
+                                        </li>
+                                        <li><a>Productos</a>
+                                        </li>
+
+                                        <li><a href="/contact">Contactanos</a>
+                                        </li>
+                                        <li><a href="/contact">Iniciar Sesión</a>
+                                        </li>
+                                    </ul>
+
+                                    <form class="navbar-form pull-right" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search"></input>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </ui:insert>
             </div>
-            <div id="content" class="left_content">
-                <ui:insert name="content">Contenido</ui:insert>
+            <div>
+                <div id="left">
+                    <ui:insert name="left">
+                        <div class="panel panel-custom">
+
+                            <div class="panel-heading-custom">
+                                <h2 class="panel-title"><b>Categorias</b></h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item">Gatos</button>
+                                    <button type="button" class="list-group-item">Perros</button>
+                                    <button type="button" class="list-group-item">Arañas</button>
+                                    <button type="button" class="list-group-item">Lagartos</button>
+                                    <button type="button" class="list-group-item">Peces</button>
+                                </div>
+
+                            </div>
+
+                            <div class="img-responsive img-thumbnail">
+                                <img src="../images/logo-animal-green.png" height="187" width="187" alt="publicidad"/>
+                            </div>
+
+
+
+                            <div class="panel-heading-custom">
+                                <h2 class="panel-title"><b>Promociones</b></h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item">Descuentos</button>
+                                    <button type="button" class="list-group-item">Hacerse socio Plus</button>
+                                    <button type="button" class="list-group-item">Canjear puntos</button>
+                                    <button type="button" class="list-group-item">Paquetes</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </ui:insert>
+                </div>
+                <div id="content" class="left_content">
+                    <ui:insert name="content">Contenido</ui:insert>
+                </div>
+            </div>
+            <div id="bottom" class="row">
+                
+                <ui:insert name="bottom" class="pie">
+
+
+                    <img src="../images/facebook.png" width="20" height="20" alt="facebook"/>
+                    <img src="../images/linkedin.png" width="20" height="20" alt="linkedin"/>
+                    <img src="../images/twitter.png" width="20" height="20" alt="twitter"/>
+                    <img src="../images/instagram.png" width="20" height="20" alt="instagram"/>
+
+                    <div class="panel panel-default jumbotron">
+                        <div class="barra-pie">
+                        <div class="panel-body col-md-4">
+                            Politica de Privacidad | Contactar | Comprar
+                        </div>
+                        <div class="panel-body col-md-4">
+
+                        </div>
+                        <div class="panel-body col-md-4">
+                            <div class=" pull-right">Area legal | Comida | Alimentos </div>
+                        </div>
+                    </div>
+                    </div>   
+                    
+                </ui:insert>
             </div>
         </div>
-        <div id="bottom">
-            <ui:insert name="bottom">
-                
-                
-
-                
-                <div class="panel panel-default row">
-  <div class="panel-body col-sm-4">
-     Politica de Privacidad | Contactar | Comprar
-  </div>
-     <div class="panel-body col-sm-4">
-     
-  </div>
-  <div class="panel-body col-sm-4">
-      <div class=" pull-right">Area legal | Comida | Alimentos </div>
-  </div>
-  
-</div>   
-                <img src="../images/facebook.png" width="20" height="20" alt="facebook"/>
-                <img src="../images/linkedin.png" width="20" height="20" alt="linkedin"/>
-                <img src="../images/twitter.png" width="20" height="20" alt="twitter"/>
-                <img src="../images/instagram.png" width="20" height="20" alt="instagram"/>
-            </ui:insert>
-        </div>
-  </div>
-         <div class="col-sm-2"></div>
+        <div class="col-md-2"></div>
     </h:body>
 
 </html>
