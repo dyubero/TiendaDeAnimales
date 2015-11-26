@@ -9,26 +9,39 @@
 
         <ui:composition template="./templates/PlantillaPrincipal.xhtml">
             <ui:define name="content">
-                <div class="container-fluid">
-                  <div class="container row">
-                      <h3>Admin</h3>
-  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-3 form-horizontal">
-    <label for="ejemplo_email_1">Usuario</label> <br/>
-    <input type="email" class="form-control" id="ejemplo_email_1"
-           placeholder="Introduce tu Usuario"></input>
-     
-                 <label for="ejemplo_email_2">Contraseña</label><br/>
-              <input type="password" class="form-control" id="ejemplo_email_2" 
-                     placeholder="Contraseña"></input>
-                 <br/>
-                 <button type="submit" class="btn btn-primary">Enviar</button>
-                 <button type="submit" class="btn btn-default">Cancelar</button>
-                
-                        
-  </div> 
-</div>                 
-      </div>              
+                <div class="container-fluid text-center">
+                  <div class="container row text-center">
+                    
+        <h3 class="text-center">Administrador</h3><br/>
+           <form class="form-inline" role="form">
+                 
+  <div class="form-group ">
+    <label  class="sr-only" for="ejemplo_email_2">Email</label>
+    <input type="email" class="form-control" id="ejemplo_email_2"
+           placeholder="Introduce tu email"/>
+  </div>
+                         <br/><br/>
+  <div class="form-group">
+    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
+    <input type="password" class="form-control" id="ejemplo_password_2" 
+           placeholder="Contraseña"/></div>
+                          <br/><br/>
+  <div class="checkbox">
+      <label class="checkbox-inline">
+        <input type="checkbox"/> No cerrar sesión
+    </label>     
+  </div>
+                          <br/><br/>
+  <button type="submit" class="btn btn-default">Entrar</button>
+  <button type="submit" class="btn btn-default">Cancelar</button> 
+                      
+</form>                 
+  </div>
+                   
+   
+</div>
             </ui:define>
         </ui:composition>
+
     </body>
 </html>
