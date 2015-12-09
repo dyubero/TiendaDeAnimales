@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<body>
+
+        <ui:composition template="./templates/PlantillaPrincipal.xhtml">
+
+            <ui:define name="content">
+                <!--div que hace la fila del contenido principal-->
+                <div class="row">
+                    <!--div de la columna de las fotos que se obtienen de las BBDD-->
+                    <div class="col-md-2">
+                        <button  class="btn-danger" onclick="history.back()">Volver Atras</button>
+                        <br></br>
+                        <br></br>
+                        <!--codigo de la obtencion de imagenes desde la base de datos(aun no implementado)-->
+                        <img src="images/banner_logo.gif" class="img-rounded" alt="Cinque Terre" width="150" height="150"></img>
+                    </div>
+                    <!--segundo div,este es el apartado del nombre,descripcion y compra del animal-->
+                    <div class="col-lg-10">
+                        <!--título-->
+                        <div class="row"><h1>Tarántula Goliat</h1></div>
+                        <br/>
+                        <br/>                       
+                        <!--div de la descripción-->
+                        <div class="row">
+                                <div class="panel panel-default">
+                                 <div class="panel-body">
+                                    <div class="col-md-7">
+                                        <!--Aqui deberia ir la entrada a la base de datos de su descripcion-->
+                                        Se considera como la araña de mayor tamaño,
+                                        ya que puede alcanzar 28 o 30 cm entre los extremos de 
+                                        sus patas extendidas y pesar más de 100 gramos, siendo el 
+                                        peso máximo registrado de 155 gramos correspondientes a un hembra 
+                                        en cautiverio. Como otros miembros de su familia y de familias 
+                                        próximas tienen el cuerpo peludo, y esos pelos, que son irritantes,
+                                        actúan como defensa.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                                              
+                        <!--El Div que contiene las columnas del precio y la de añadir al carro-->
+                        <div class="row">
+                            <!--div para seleccionar sexo-->
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccionar Sexo
+                            <span class="caret"></span></button>
+                               <ul class="dropdown-menu">
+                                <li><a href="#">Macho</a></li>
+                                <li><a href="#">Hembra</a></li>                                
+                              </ul>
+                             </div>
+                            <br/>  
+                                <div class="col-lg-7">
+                                </div>  
+                                <div class="col-lg-4" align="right"> 
+                                    <div class="col-lg-7"> 
+                                        <!--Aqui deberia ir el precio de la base de datos-->
+                                    200,00 EUR
+                                    </div> 
+                                    <!--Para ir a comprar-->
+                                    <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> Añadir</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
