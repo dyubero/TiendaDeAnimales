@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+         
+        <h:outputStylesheet name="./css/cssJavi.css"/>
+    </h:head>
+    <h:body>
+
+        <ui:composition template="./templates/PlantillaPrincipal.xhtml">
+
+            <ui:define name="content">
+                <div class="row">
+                    <div class="col-lg-10">
+                    MI COMPRA
+                    <a href="pedidoFinalizado.xhtml"><button  class="btn btn-default pull-right">Comprar</button></a>
+                  
+                        <a href=" "><button class="btn btn-default pull-right">Seguir Comprando</button></a>
+                  
+                   </div>
+                    
+                    <div class="col-lg-7">
+                       <br></br>
+                        PVP
+                    <div class="col-lg-10">
+                        
+                        Producto
+                   
+                    </div>
+                   
+                    </div>
+                    <div class="col-lg-5">
+                        <br></br>
+                     Precio
+                     Total
+                   
+                    <div class="col-lg-5">
+                      Cantidad
+                   
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="col-lg-9">
+                    <img src="images/Envio-gratis-50euros.jpg" width="200" height="100"></img>
+                 
+                    <div class="col-lg-9">
+                        <button class="btn btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span>Añadir</button>
+                    </div>
+                </div>
+                
+                
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 
+                 
+                <table class="table">
+  
+                </table>
+                 <br></br>
+                 <p><o>MI PEDIDO</o></p>
+                 <div >
+                     Nombre Usuario : <br></br>
+                                    <input   name="user" type="text" style="margin-top: 10px ; width:250px;height: 30px "/>
+                                </div>
+                                <div >
+                     Email : <br></br>
+                                    <input  name="email" type="text" style="margin-top: 10px ; width:250px;height: 30px "/>
+                                </div>
+                                <div >
+                     Contraseña : <br></br>
+                                    <input  name="passw" type="text" style="margin-top: 10px ; width:250px;height: 30px "/>
+                                </div>
+                                <div >
+                     Repetir Contraseña : <br></br>
+                                    <input  name="passw" type="text" style="margin-top: 10px ; width:250px;height: 30px "/>
+                                </div>
+                 <br></br>
+                 <input type="checkbox" name="checkbox" id="checkbox" /> He leído y acepto las condiciones generales
+                 <br></br>
+                                <button type="button"  name="registrar" class="btn btn-danger " style="width:100px;height: 45px;margin-left: 50px " >Registrar</button>
+                              
+                
+            
+            </ui:define>    
+
+        </ui:composition>
+
+    </h:body>
+</html>
